@@ -298,3 +298,35 @@ La pregunta esta mal
 
 
 ##¿Qué hace docker run -it --rm --volumes-from <container> -w <dir> <image> <command>?
+
+
+###¿Qué significa el argumento s3?
+Es un servicio de almacenamiento para internet que puede almacenar y recuperar
+cualquier cantidad de datos en cualquier momento y desde cualquier parte de la web.
+
+###¿Qué significa el argumento --delete?
+Eliminar los archivos que no existan en un bucket a la hora de sincronizarse con el directorio local.
+
+###¿Qué significa el argumento --acl?
+Lista de Control de Acceso, sirve para conceder al propietario del recurso control total sobre el recuerso.
+
+###¿Qué significa el argumento --region?
+Sirve para especificar la región donde se trabajará.
+
+###¿Para qué sirve el comando aws?
+Sirve para manipular la interfaz de linea de comando de AWS 
+
+###Explicar lo que hace la función deploy_bucket
+Primero sincroniza el bucker con el directorio local eliminando los archivos que no estén igual que el directorio local luego asigna un tipo de control al propietario y por último asigna la región de trabajo.
+
+### Explicar lo que hace la función show_deploy_url
+Primero realiza un salto de linea luego imprime una url, por último realiza otro salto de linea.
+
+### ¿Qué hace cada paso?
+Ejecuta las funciones deploy_bucket show_deploy_url una por una.
+
+
+
+
+
+

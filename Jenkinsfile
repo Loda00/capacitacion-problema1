@@ -9,4 +9,10 @@ pipeline {
             }
         } 
     }
+    parameters {
+        choice(
+            name: 'DEPLOY',
+            choices: ["gh-page","aws"],
+            description: "Ambiente de despliegue")
+    }
 }
